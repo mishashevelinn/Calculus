@@ -33,15 +33,15 @@ def asymptote(expression, x):
     if (a != oo) and (a != -oo):
         b = limit((expression - (a * x)), x, oo)
     else:
-        print("angle of asymptote is infinity => no angled asymptote")
+        print("angle of asymptote is infinity => no angled asymptote\n")
         return
     if (b != oo) and (b != -oo):
         if a != 0:
             print("y = {}x + {}".format(a, b))
         else:
-            print("y = {}\nHorizontal asymptote is a private case of angled(slope = 0)".format(b))
+            print("y = {}\nHorizontal asymptote is a private case of angled(slope = 0)\n".format(b))
     else:
-        print("asymptote and y axe intersection is infinity => no angled asymptote")
+        print("asymptote and y axe intersection is infinity => no angled asymptote\n")
 
 
 def screen():
@@ -69,7 +69,7 @@ def main():
     screen()
     initialize()
     print("To go back to main menu press 0\nTo exit press any key")
-    c = int(input())
+    c = int(input("\n"))
     while c == 0:
         screen()
         initialize()
